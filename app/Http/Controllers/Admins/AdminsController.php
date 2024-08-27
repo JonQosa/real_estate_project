@@ -306,6 +306,8 @@ class AdminsController extends Controller
                     "prop_id" => $request->prop_id,
                 ]);
             }
+            return redirect()->route('gallery.create')->with('success', 'Gallery created successfully!');
+
         }
     
     }

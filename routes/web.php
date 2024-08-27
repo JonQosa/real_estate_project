@@ -15,8 +15,8 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\Props\PropertiesController::class, 'index'])->name('home');
 
 
-//display contacts and about pages
-Route::get('contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
+//display about pages
+// Route::get('contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
 Route::get('about', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
 
 
@@ -60,7 +60,7 @@ Route::get('all-requests/', [App\Http\Controllers\Users\UsersController::class, 
 Route::get('all-saved-props/', [App\Http\Controllers\Users\UsersController::class, 'allSavedProps'])->name('all.saved.props');
 });
 
-Route::post('admin/login', [App\Http\Controllers\Admins\AdminsController::class, 'checkLogin'])->name('check.login');
+Route::post('admin-login', [App\Http\Controllers\Admins\AdminsController::class, 'checkLogin'])->name('check.login');
 // Route::post('logout', [App\Http\Controllers\Admins\AdminsController::class, 'logout'])->name('logout');
  Route::get('/admin/login', [App\Http\Controllers\Admins\AdminsController::class, 'viewLogin'])->name('view.login');
 
@@ -109,7 +109,6 @@ Route::get('delete-props/{id}', [App\Http\Controllers\Admins\AdminsController::c
 Route::get('/properties/{id}/edit', [App\Http\Controllers\Admins\AdminsController::class, 'editProps'])
     ->name('props.edit');
 
-// Route to handle the form submission for updating a property
 Route::put('/properties/{id}', [App\Http\Controllers\Admins\AdminsController::class, 'updateProps'])
     ->name('props.update');
 });

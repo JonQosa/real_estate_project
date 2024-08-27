@@ -7,7 +7,7 @@
     <div class="container">
       <div class="row align-items-center justify-content-center text-center">
         <div class="col-md-10">
-          <h1 class="mb-2">About Homeland</h1>
+          <h1 class="mb-2">About PropLand</h1>
         </div>
       </div>
     </div>
@@ -72,11 +72,11 @@
               <h2 class="mb-2 font-weight-light text-black h4">Brooke Cagle</h2>
               <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, cumque vitae voluptates culpa earum similique corrupti itaque veniam doloribus amet perspiciatis recusandae sequi nihil tenetur ad, modi quos id magni!</p>
-              <p>
+              {{-- <p>
                 <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
                 <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
                 <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
-              </p>
+              </p> --}}
             </div>
 
           </div>

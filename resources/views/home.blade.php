@@ -32,48 +32,57 @@
                       <div class="row">
                         <form action="{{ route('search.prop') }}" method="POST" class="form-search col-md-12" style="margin-top: -100px;">
                           @csrf
-                          <div class="row  align-items-end">
+                          <div class="row align-items-end">
+                            
                             <div class="col-md-3">
                               <label for="list-types">Listing Types</label>
-                              <div class="select-wrap">
-                                <span class="icon icon-arrow_drop_down"></span>
-                                <select name="list_types" id="list-types" class="form-control d-block rounded-0">
-                                  <option value="Condo">Condo</option>
-                                  <option value="Commercial">Commercial</option>
-                                  <option value="Land">Land</option>
-                                </select>
+                              <div class="input-wrap">
+                                <input 
+                                  type="text" 
+                                  name="list_types" 
+                                  id="list-types" 
+                                  class="form-control d-block rounded-0" 
+                                  placeholder="Enter listing type"
+                                />
                               </div>
                             </div>
+                            
                             <div class="col-md-3">
                               <label for="offer-types">Offer Type</label>
-                              <div class="select-wrap">
-                                <span class="icon icon-arrow_drop_down"></span>
-                                <select name="offer_types" id="offer-types" class="form-control d-block rounded-0">
-                                  <option value="Buy">For Buy</option>
-                                  <option value="Rent">For Rent</option>
-                                  <option value="Lease">For Lease</option>
-                                </select>
+                              <div class="input-wrap">
+                                <input 
+                                  type="text" 
+                                  name="offer_types" 
+                                  id="offer-types" 
+                                  class="form-control d-block rounded-0" 
+                                  placeholder="Enter offer type"
+                                />
                               </div>
                             </div>
+                            
                             <div class="col-md-3">
-                              <label for="select_city">Select City</label>
-                              <div class="select-wrap">
-                                <span class="icon icon-arrow_drop_down"></span>
-                                <select name="select_city" id="select-city" class="form-control d-block rounded-0">
-                                  <option value="New York">New York</option>
-                                  <option value="Brooklyn">Brooklyn</option>
-                                  <option value="London">London</option>
-                                  <option value="Tokyo">Tokyo</option>
-                                  <option value="Cairo">Cairo</option>
-                                </select>
+                              <label for="select-city">Select City</label>
+                              <div class="input-wrap">
+                                <input 
+                                  type="text" 
+                                  name="select_city" 
+                                  id="select-city" 
+                                  class="form-control d-block rounded-0" 
+                                  placeholder="Enter city"
+                                />
                               </div>
                             </div>
+                            
                             <div class="col-md-3">
-                              <input name="submit" type="submit" class="btn btn-success text-white btn-block rounded-0" value="Search">
+                              <button type="submit" class="btn btn-success text-white btn-block rounded-0">Search</button>
                             </div>
+                            
                           </div>
                         </form>
-                      </div>  
+                      </div>
+                    </div>
+                  </div>
+                  
               
                       <div class="row">
                         <div class="col-md-12">
@@ -171,7 +180,7 @@
               
                       <div class="row">
                         <div class="col-md-6 col-lg-4">
-                          <a href="#" class="service text-center">
+                          {{-- <a href="#" class="service text-center"> --}}
                             <span class="icon flaticon-house"></span>
                             <h2 class="service-heading">Research Subburbs</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure qui natus perspiciatis ex odio molestia.</p>
@@ -179,7 +188,7 @@
                           </a>
                         </div>
                         <div class="col-md-6 col-lg-4">
-                          <a href="#" class="service text-center">
+                          {{-- <a href="#" class="service text-center"> --}}
                             <span class="icon flaticon-sold"></span>
                             <h2 class="service-heading">Sold Houses</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure qui natus perspiciatis ex odio molestia.</p>
@@ -187,7 +196,7 @@
                           </a>
                         </div>
                         <div class="col-md-6 col-lg-4">
-                          <a href="#" class="service text-center">
+                          {{-- <a href="#" class="service text-center"> --}}
                             <span class="icon flaticon-camera"></span>
                             <h2 class="service-heading">Security Priority</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure qui natus perspiciatis ex odio molestia.</p>

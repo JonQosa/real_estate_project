@@ -90,7 +90,7 @@
             <div class="container py-1">
               <div class="row align-items-center">
                 <div class="col-8 col-md-8 col-lg-4">
-                  <h1 class="mb-0"><a href="{{ url('/') }}" class="text-white h2 mb-0"><strong>Homeland<span class="text-danger">.</span></strong></a></h1>
+                  <h1 class="mb-0"><a href="{{ url('/') }}" class="text-white h2 mb-0"><strong>PropLand<span class="text-danger"></span></strong></a></h1>
                 </div>
                 <div class="col-4 col-md-4 col-lg-8">
                   <nav class="site-navigation text-right text-md-right" role="navigation">
@@ -117,7 +117,7 @@
                         </ul>
                       </li>
                       <li><a href="{{ route('about') }}">About</a></li>
-                      <li><a href="{{ route('contact') }}">Contact</a></li>
+                      {{-- <li><a href="{{ route('contact') }}">Contact</a></li> --}}
 
                       @guest
                         @if(Route::has('login'))
@@ -201,7 +201,7 @@
           <div class="row">
             <div class="col-lg-4">
               <div class="mb-5">
-                <h3 class="footer-heading mb-4">About Homeland</h3>
+                <h3 class="footer-heading mb-4">About PropLand</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque, consequatur id ratione, et non dignissimos culpa? Ut veritatis, quos illum totam quis blanditiis, minima minus odio!</p>
               </div>
             </div>
@@ -212,17 +212,16 @@
                 </div>
                 <div class="col-md-6 col-lg-6">
                   <ul class="list-unstyled">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Buy</a></li>
-                    <li><a href="#">Rent</a></li>
-                    <li><a href="#">Properties</a></li>
+                    <li><a href="{{ route('home') }}">Home</a></li>
+                    <li><a href="{{ route('buy.prop') }}">Buy</a></li>
+                    <li><a href="{{ route('rent.prop') }}">Rent</a></li>
+                    <li><a href="{{ route('props.all') }}">Properties</a></li>
                   </ul>
                 </div>
                 <div class="col-md-6 col-lg-6">
                   <ul class="list-unstyled">
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Contact Us</a></li>
                     <li><a href="#">Terms</a></li>
                   </ul>
                 </div>
@@ -234,12 +233,7 @@
             <div class="col-lg-4 mb-5 mb-lg-0">
               <h3 class="footer-heading mb-4">Follow Us</h3>
     
-                  <div>
-                    <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                    <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                    <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                    <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-                  </div>
+       
     
               
     

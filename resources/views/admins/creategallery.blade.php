@@ -7,6 +7,11 @@
       <div class="card">
         <div class="card-body">
                 <h5 class="card-title mb-5 d-inline">Create Gallery</h5>
+                @if(session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
                 <form method="POST" action="{{ route('gallery.store') }}" enctype="multipart/form-data">
                   @csrf
                   <div class="mb-3">

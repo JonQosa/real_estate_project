@@ -31,10 +31,7 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function contact()
-    {
-        return view('pages.contact');
-    }
+
 
     public function about()
     {
